@@ -47,6 +47,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #333;
 }
 
 .container {
@@ -56,11 +57,12 @@ export default {
   width: 350px;
   padding: 20px;
   text-align: center;
+  color: #333;
 }
 
 h1 {
   font-size: 24px;
-  color: #333;
+  color: inherit;
   margin-bottom: 20px;
 }
 
@@ -121,6 +123,36 @@ li button:hover {
 
 h2 {
   font-size: 18px;
-  color: #333;
+  color: inherit;
+}
+body.dark-theme #app {
+  background-color: #333;
+  color: #f5f5f5; /* Light text for dark theme */
+}
+
+body.dark-theme .container {
+  background-color: #444; /* Dark background for the container */
+  color: #f5f5f5; /* Light text for dark theme */
+}
+
+body.dark-theme button {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+body.dark-theme input {
+  border: 1px solid #ccc;
+  background-color: #555; /* Dark background for input */
+  color: #f5f5f5; /* Light text for input */
+}
+
+body.dark-theme li {
+  background-color: #666; /* Dark background for list items */
+  color: #f5f5f5; /* Light text for list items */
+}
+
+body.dark-theme li button {
+  background-color: #ff4d4d;
+  color: #fff;
 }
 </style>
